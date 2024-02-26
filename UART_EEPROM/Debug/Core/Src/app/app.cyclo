@@ -1,0 +1,4 @@
+../Core/Src/app/app.c:30:10:appInit	1
+../Core/Src/app/app.c:43:6:appPeriodicProcess	7
+../Core/Src/app/app.c:111:17:appProcessData	2
+../Core/Src/app/app.c:143:17:appCommunicationCheckForEndKey_e	2

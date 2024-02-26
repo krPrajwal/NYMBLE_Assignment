@@ -1,0 +1,4 @@
+../Core/Src/halUart/halUart.c:9:6:halUartInit	8	static
+../Core/Src/halUart/halUart.c:36:10:halUartgetRxCounter	4	static
+../Core/Src/halUart/halUart.c:49:6:halUartSend	16	static
+../Core/Src/halUart/halUart.c:62:6:halUartRecieve	16	static

@@ -1,0 +1,4 @@
+../Core/Src/halUart/halUart.c:9:6:halUartInit	1
+../Core/Src/halUart/halUart.c:36:10:halUartgetRxCounter	1
+../Core/Src/halUart/halUart.c:49:6:halUartSend	1
+../Core/Src/halUart/halUart.c:62:6:halUartRecieve	1

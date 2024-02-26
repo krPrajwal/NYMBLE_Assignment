@@ -1,0 +1,4 @@
+../Core/Src/halEEPROM/halEeprom.c:15:10:halEEpromInit	16	static
+../Core/Src/halEEPROM/halEeprom.c:35:10:halEEpromWrite	24	static
+../Core/Src/halEEPROM/halEeprom.c:55:10:halEEpromRead	24	static
+../Core/Src/halEEPROM/halEeprom.c:73:10:halEEpromGetWriteCounter	4	static

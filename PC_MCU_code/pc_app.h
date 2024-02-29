@@ -15,7 +15,10 @@ typedef enum
     E_APP_END,
 }e_appStates;
 
+/**************** APIs *****************/
 void appPeriodicProcess(void);
+
+
 e_status appInit(void);
 
 

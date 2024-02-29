@@ -2,6 +2,14 @@
 
 e_appStates gAppStatus_e;
 
+/**
+ * @fn - appPeriodicProcess
+ * @brief - state machine which controls the flow of communication at pc side
+ * @param - none
+ * 
+ * @return - void
+*/
+
 void appPeriodicProcess()
 {
     switch(gAppStatus_e)
@@ -43,6 +51,13 @@ void appPeriodicProcess()
     }
 }
 
+/**
+ * @fn - appInit
+ * @brief - Intializes the appPeriodic process with intial stage
+ * @param - None
+ * 
+ * @return - void
+*/
 e_status appInit(void)
 {
     gAppStatus_e = E_APP_INIT;

@@ -1,7 +1,15 @@
 #include "pc_uart.h"
 
+/* PC Com Port Handle structre*/
 HANDLE G_Serial;
 
+/**
+ * @fn    - handleInit
+ * @brief - This function intialies the User select Com port,
+ *          for serial communication
+ * @param - none
+ * @return - none
+*/
 void handleInit()
 {
      char comPort[10];
@@ -22,6 +30,13 @@ void handleInit()
 
 }
 
+/**
+ * @fn    - serialportConfig
+ * @brief - This function intialies the PC Com port,
+ *          with serial pin configuration to support UART communication
+ * @param - none
+ * @return - none
+*/
 void serialportConfig()
 {
    
@@ -52,6 +67,13 @@ void serialportConfig()
     }
 
 }
+
+/**
+ * @fn    - sendMsgToMCU
+ * @brief - This function sends data over COM port
+ * @param - none
+ * @return - none
+*/
 void sendMsgToMCU()
 {
     char l_txBuffer[G_BUFFER_SIZE];
@@ -105,6 +127,13 @@ void sendMsgToMCU()
          dataTransferRate(smStartTime,smEndTime,strlen(l_txBuffer),data_transfer);
 }
 
+
+/**
+ * @fn    - receivRespFrmMCU
+ * @brief - This function receives data over COM port
+ * @param - none
+ * @return - none
+*/
 void receivRespFrmMCU()
 {
     char l_rxBuffer[G_BUFFER_SIZE];
@@ -147,7 +176,13 @@ void receivRespFrmMCU()
 
 }
 
-
+/**
+ * @fn    - printError
+ * @brief - This function print error message, 
+ *          if any exception occured during conifguration step
+ * @param - none
+ * @return - none
+*/
 void printError(HANDLE G_serial, const char *msg)
 {
     fprintf(stderr, "%s", msg);
@@ -155,6 +190,13 @@ void printError(HANDLE G_serial, const char *msg)
     exit(1);
 }
 
+/**
+ * @fn    - dataTransferRate
+ * @brief - This function calculates the data transer rate or reception rate
+ *          and displays output at the console
+ * @param - none
+ * @return - none
+*/
 void dataTransferRate(clock_t l_start, clock_t l_end, UINT l_totalBytes, e_com_mode l_comType)
 {
     double l_dtr_timeInSec = (double) (l_end - l_start)/CLOCKS_PER_SEC;
@@ -169,6 +211,12 @@ void dataTransferRate(clock_t l_start, clock_t l_end, UINT l_totalBytes, e_com_m
     }
 }
 
+/**
+ * @fn    - andleDeInit
+ * @brief - This function De-initalizes the PC COM port
+ * @param - none
+ * @return - none
+*/
 void handleDeInit()
 {
     CloseHandle(G_Serial);

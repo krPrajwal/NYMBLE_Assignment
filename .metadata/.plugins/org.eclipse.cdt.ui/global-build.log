@@ -1,0 +1,63 @@
+14:31:48 **** Incremental Build of configuration Debug for project UART_EEPROM ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/app/app.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Repo/UART_EEPROM/Core/Src/halUart" -I"D:/Repo/UART_EEPROM/Core/Src" -I"D:/Repo/UART_EEPROM/Core/Src/halEEPROM" -I"D:/Repo/UART_EEPROM/Core/Src/app" -I"D:/Repo/UART_EEPROM/Drivers/STM32F4xx_HAL_Driver/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/app/app.d" -MT"Core/Src/app/app.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app/app.o"
+arm-none-eabi-gcc -o "UART_EEPROM.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Repo\UART_EEPROM\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_EEPROM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_EEPROM.elf
+ 
+arm-none-eabi-size  UART_EEPROM.elf 
+arm-none-eabi-objdump -h -S UART_EEPROM.elf  > "UART_EEPROM.list"
+   text	   data	    bss	    dec	    hex	filename
+  13172	     20	   7876	  21068	   524c	UART_EEPROM.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_EEPROM.list
+ 
+14:33:46 **** Incremental Build of configuration Debug for project UART_EEPROM ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/app/app.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/Repo/UART_EEPROM/Core/Src/halUart" -I"D:/Repo/UART_EEPROM/Core/Src" -I"D:/Repo/UART_EEPROM/Core/Src/halEEPROM" -I"D:/Repo/UART_EEPROM/Core/Src/app" -I"D:/Repo/UART_EEPROM/Drivers/STM32F4xx_HAL_Driver/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/app/app.d" -MT"Core/Src/app/app.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app/app.o"
+arm-none-eabi-gcc -o "UART_EEPROM.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Repo\UART_EEPROM\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_EEPROM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_EEPROM.elf
+ 
+arm-none-eabi-size  UART_EEPROM.elf 
+arm-none-eabi-objdump -h -S UART_EEPROM.elf  > "UART_EEPROM.list"
+   text	   data	    bss	    dec	    hex	filename
+  13172	     20	   7876	  21068	   524c	UART_EEPROM.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_EEPROM.list
+ 
+14:34:03 **** Incremental Build of configuration Debug for project UART_EEPROM ****
+make -j4 all 
+arm-none-eabi-size  UART_EEPROM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13172	     20	   7876	  21068	   524c	UART_EEPROM.elf
+Finished building: default.size.stdout
+ 
+14:34:25 **** Incremental Build of configuration Debug for project UART_EEPROM ****
+make -j4 all 
+arm-none-eabi-size  UART_EEPROM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13172	     20	   7876	  21068	   524c	UART_EEPROM.elf
+Finished building: default.size.stdout
+ 
+14:35:12 **** Incremental Build of configuration Debug for project UART_EEPROM ****
+make -j4 all 
+arm-none-eabi-size  UART_EEPROM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13172	     20	   7876	  21068	   524c	UART_EEPROM.elf
+Finished building: default.size.stdout
+ 
+14:36:10 **** Incremental Build of configuration Debug for project UART_EEPROM ****
+make -j4 all 
+arm-none-eabi-size  UART_EEPROM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13172	     20	   7876	  21068	   524c	UART_EEPROM.elf
+Finished building: default.size.stdout
+ 
+14:37:07 **** Incremental Build of configuration Debug for project UART_EEPROM ****
+make -j4 all 
+arm-none-eabi-size  UART_EEPROM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13172	     20	   7876	  21068	   524c	UART_EEPROM.elf
+Finished building: default.size.stdout
+ 

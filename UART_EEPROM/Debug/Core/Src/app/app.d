@@ -1,6 +1,5 @@
 Core/Src/app/app.o: ../Core/Src/app/app.c ../Core/Src/app/app.h \
- ../Core/Src/app/api_app.h \
- D:/MCU_WORKSPACE/Nymble_pr/UART_EEPROM/Core/Src/commonDef.h \
+ ../Core/Src/app/api_app.h D:/Repo/UART_EEPROM/Core/Src/commonDef.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -29,11 +28,11 @@ Core/Src/app/app.o: ../Core/Src/app/app.c ../Core/Src/app/app.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- D:/MCU_WORKSPACE/Nymble_pr/UART_EEPROM/Core/Src/halUart/halUart.h \
- D:/MCU_WORKSPACE/Nymble_pr/UART_EEPROM/Core/Src/halEEPROM/halEeprom.h
+ D:/Repo/UART_EEPROM/Core/Src/halUart/halUart.h \
+ D:/Repo/UART_EEPROM/Core/Src/halEEPROM/halEeprom.h
 ../Core/Src/app/app.h:
 ../Core/Src/app/api_app.h:
-D:/MCU_WORKSPACE/Nymble_pr/UART_EEPROM/Core/Src/commonDef.h:
+D:/Repo/UART_EEPROM/Core/Src/commonDef.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:
@@ -62,5 +61,5 @@ D:/MCU_WORKSPACE/Nymble_pr/UART_EEPROM/Core/Src/commonDef.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
-D:/MCU_WORKSPACE/Nymble_pr/UART_EEPROM/Core/Src/halUart/halUart.h:
-D:/MCU_WORKSPACE/Nymble_pr/UART_EEPROM/Core/Src/halEEPROM/halEeprom.h:
+D:/Repo/UART_EEPROM/Core/Src/halUart/halUart.h:
+D:/Repo/UART_EEPROM/Core/Src/halEEPROM/halEeprom.h:
